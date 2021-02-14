@@ -1,0 +1,9 @@
+#IDE
+.vscode
+
+#binaries
+main.exe
+
+#Folders
+\images
+\screenshots
