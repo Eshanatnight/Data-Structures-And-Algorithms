@@ -51,8 +51,8 @@ void merge(int arr[], int l, int m, int r)
 	for (j = 0; j < n2; j++)
 		R[j] = arr[m + 1 + j];
 
-	/* Merge the temp arrays back into arr[l..r]*/
-	// Initial index of first subarray
+	/* Merge the temp arrays back into arr[l..r]
+	Initial index of first subarray */
 	i = 0;
 
 	// Initial index of second subarray
@@ -67,13 +67,11 @@ void merge(int arr[], int l, int m, int r)
 			arr[k++] = R[j++];
 	}
 
-	/* Copy the remaining elements of L[],
-		if there are any */
+	/* Copy the remaining elements of L[], if there are any */
 	while (i < n1)
 		arr[k++] = L[i++];
 
-	/* Copy the remaining elements of R[],
-		if there are any */
+	/* Copy the remaining elements of R[], if there are any */
 	while (j < n2)
 		arr[k++] = R[j++];
 }
